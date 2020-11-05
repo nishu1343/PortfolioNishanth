@@ -1,0 +1,166 @@
+/* body {/*this will center everything but for not with width setup*/
+ /* margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+/*h1 {/*For this width is set up,and its a block element. so u have to center it using the auto value in the margin.top and bottom is 0,left and right is auto   */
+  /* width: 10%;
+  margin: 0 auto ; */
+ /* margin-top: 0;
+  font-family: 'Sacramento', cursive;
+} */
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /* 16px = 1em = 100%*; rem -> not affected by its parent*/
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;/*40px/16px =2.5rem*/
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  font-size: 2rem;
+}
+
+p {/*for all the paragraphs */
+  line-height: 2;/*To make the text easier to read*/
+  font-size: 1.25rem;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;/*we will get rid of that bottom border and we see only single line*/
+  width: 4%; /*width or the dotted line */
+  margin: 100px auto;
+}
+
+/*Target the anchor tags.linkedin,twitter,..at the bottom of page*/
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;/*Gets rid of the defaulted underline on the anchor tags */
+}
+
+a:hover {
+  color: #EAF6f6;
+}
+
+.intro-text {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;/*40 top, 60 bottomauto for left and right */
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {/*100 to top and bottom,0 to left and right */
+  margin: 100px 0;
+}
+
+.my-image1 {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.my-image2 {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 15px;
+  /*This 15px bottom is sufficient to cover the bottom 12px default space for the paragraph. if any doubt,comment this line and inspect element.after the footer there will be some space.in the box model,it will be shown as some default 16px,we are covering that */
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.copyright-text {
+  color: #EAF6F6;
+  font-size: 0.75rem;/*75 of 16px */
+  padding: 20px 0;
+}
+
+.btn {
+  color: #11999E;
+}
+
+.skill-row {
+  width: 33%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+/*do it in css button generator for 'contact me' button. and change the font family according to what we are using which is monseret.. */
+.butn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999B);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999B);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999B);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999B);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999B);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+  text-decoration: none;
+}
+
+/*.clear { /*this prevents the image from wrapping the text. the text will go below
+  clear: right;
+}*/
